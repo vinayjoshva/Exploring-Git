@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <main class="whole-container">
+  <nav class="nav-container">
+    <div class="test-logo">
+      <img src="./Assets/TestLogo.svg" alt="logo">
+    </div>
+    <div class="nav-items">
+      <ul class="nav-item-container">
+        <li class="nav-links"><img src="./Assets/home_FILL0_wght300_GRAD0_opsz24.svg" alt="#"><a href="#">Overview</a></li>
+        <li class="nav-links"><img src="./Assets/group_FILL0_wght300_GRAD0_opsz24.svg" alt="#"><a href="#">Patients</a></li>
+        <li class="nav-links"><img src="./Assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" alt="#"><a href="#">Schedule</a></li>
+        <li class="nav-links"><img src="./Assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg" alt="#"><a href="#">Message</a></li>
+        <li class="nav-links"><img src="./Assets/credit_card_FILL0_wght300_GRAD0_opsz24.svg" alt="#"><a href="#">Transactions</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div><img src="./Assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png" alt="doctor-photo"></div>
+      <div class="DrInfo">
+        <span class="DrName">Dr. Jose Simmons</span>
+        <span class="DrRole">General Practitioner</span>
+      </div>
+      <div class="setting-images"><img src="./Assets/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="settings">
+        <img src="./Assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="#"></div>
+      </div>
+  </nav>
+
+  <div class="section grid-section">
+    <div class="patients-list grid-row-span grid-piece">
+      <div class="search-patients">
+      <h2>Patients</h2>
+      <img src="./Assets/search_FILL0_wght300_GRAD0_opsz24.svg" alt="searchbtn">
+    </div>
+    <div class="patient-info">
+    </div>
+    </div>
+    <div class="diagnosis-history grid-piece">
+      <div>
+        <h2>diagnosis-history</h2>
+      </div>
+      <div class="blood-pressure">
+        <div class="blood-pressure-heading">
+          <h2>Blood Pressure</h2>
+          <div class="blood-pressure-duration">
+            <select name="blood" id="blood">
+              <option value="volvo">Last 6 months</option>
+            </select>
+          </div>
+          <canvas class="blood-pressure-graph" id="myChart"></canvas>
+        </div>
+        <div class="blood-pressure-types">
+          <div class="top">
+            <h3 class="blood-pressure-types-head">Systolic</h3>
+            <div class="blood-pressure-types-reading"></div>
+            <div class="blood-pressure-types-average">
+              <img src="./Assets/ArrowUp.svg" alt="#">
+              <span class="average"></span>
+            </div>
+          </div>
+          <div class="bottom">
+            <h3 class="blood-pressure-types-head">Diastolic</h3>
+            <div class="blood-pressure-types-reading"></div>
+            <div class="blood-pressure-types-average">
+              <img src="./Assets/ArrowDown.svg" alt="#">
+              <span class="average"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="other-reports">
+        <div class="other-reports-cards">
+          <img src="./Assets/respiratory rate.svg" alt="lungs">
+          <div class="other-reports-cards-heading">Respiratory Rate</div>
+          <div class="other-reports-cards-body"></div>
+          <div class="other-reports-cards-state"></div>
+        </div>
+        <div class="other-reports-cards">
+          <img src="./Assets/temperature.svg" alt="lungs">
+          <div class="other-reports-cards-heading">Temperature</div>
+          <div class="other-reports-cards-body"></div>
+          <div class="other-reports-cards-state"></div>
+        </div>
+        <div class="other-reports-cards">
+          <img src="./Assets/HeartBPM.svg" alt="lungs">
+          <div class="other-reports-cards-heading">Heart Rate</div>
+          <div class="other-reports-cards-body"></div>
+          <div class="other-reports-cards-state"></div>
+        </div>
+      </div>
+      </div>
+    <div class="diagnostic-list grid-piece">
+      <h2>Diagnostic List</h2>
+      <div class="diagnostic-header">
+        <ul class="diagnostic-flex-header">
+          <li>Problem/Diagnosis</li>
+          <li>Description</li>
+          <li>Status</li>
+        </ul>
+      </div>
+      <div class="diagnostic-body">
+      </div>
+    </div>
+    <div class="patient-detail grid-patient-column grid-piece">
+      <div class="patient">
+      </div>
+      <div class="patient-personals">
+        <div class="patient-personals-section">
+          <img src="./Assets/BirthIcon.svg" alt="DOB">
+          <div class="span-holder dob"> 
+            <span>Date of Birth</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="patient-personals-section">
+          <img src="./Assets/FemaleIcon.svg" alt="DOB">
+          <div class="span-holder gender"> 
+            <span>Gender</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="patient-personals-section">
+          <img src="./Assets/PhoneIcon.svg" alt="DOB">
+          <div class="span-holder phone"> 
+            <span>Contact Info.</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="patient-personals-section">
+          <img src="./Assets/PhoneIcon.svg" alt="DOB">
+          <div class="span-holder emergency"> 
+            <span>Emergency Contacts</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="patient-personals-section">
+          <img src="./Assets/InsuranceIcon.svg" alt="DOB">
+          <div class="span-holder insurance"> 
+            <span>Insurance Provider</span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <button class="complete-info">Show All Information</button>
+    </div>
+    <div class="lab-results grid-piece">
+      <h2 class="lab-results-head">Lab Results</h2>
+      <div class="lab-results-body">
+        <div class="test">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
